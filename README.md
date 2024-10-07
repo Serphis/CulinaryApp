@@ -1,7 +1,7 @@
 My culinary application using Firebase Authentication and Firebase to manage data used in app.
 
 User login
-![login1](https://github.com/user-attachments/assets/570f2df5-36eb-4dca-992e-a197dc58aac4)
+![login1](https://github.com/user-attachments/assets/570f2df5-36eb-4dca-992e-a197dc58aac4 | width=100)
 
 User register
 ![register1](https://github.com/user-attachments/assets/755dbce4-cf10-44f0-abdf-74774fa1bc5e)
