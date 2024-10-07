@@ -2,7 +2,7 @@ My culinary application using Firebase Authentication and Firebase to manage dat
 
 User login
 
-<img src="https://github.com/user-attachments/assets/570f2df5-36eb-4dca-992e-a197dc58aac4" width="200">
+<img src="https://github.com/user-attachments/assets/570f2df5-36eb-4dca-992e-a197dc58aac4" width="300">
 
 ![login1](https://github.com/user-attachments/assets/570f2df5-36eb-4dca-992e-a197dc58aac4 | width=100)
 
