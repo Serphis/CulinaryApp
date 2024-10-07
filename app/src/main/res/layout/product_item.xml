@@ -1,0 +1,53 @@
+<!-- product_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/baseline_error_outline_24" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/product_image"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_toEndOf="@+id/product_image"
+        android:textSize="14sp"
+        android:textColor="#aaaaaa"
+        android:text="Product Description" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description"
+        android:layout_toEndOf="@+id/product_image"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:text="Instructions" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructions"
+        android:layout_toEndOf="@+id/product_image"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:text="Ingredients: Item 1, Item 2, Item 3" />
+</RelativeLayout>

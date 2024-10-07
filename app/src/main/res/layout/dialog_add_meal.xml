@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextMealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meal name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMealName"
+        android:hint="Calories"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Meal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextCalories" />
+
+</RelativeLayout>

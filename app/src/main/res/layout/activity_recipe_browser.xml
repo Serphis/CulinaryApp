@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeBrowser"
+    android:background="#eeeeee">
+
+    <TextView
+    android:id="@+id/recipeBrowserTitle"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="0dp"
+    android:background="#aaaaaa"
+    android:gravity="center"
+    android:text="Recipe Browser"
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/my_recipes_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+        android:text="My Recipes"
+        android:background="@drawable/returnbutton"
+        android:contentDescription="MyRecipes"
+        android:layout_alignLeft="@id/recipeBrowserTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/return_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="BACK"
+        android:background="@drawable/returnbutton"
+        android:contentDescription="Return"
+        android:layout_alignRight="@id/recipeBrowserTitle" />
+
+    <ListView
+        android:id="@+id/recipe_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/recipeBrowserTitle" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recipe_list"
+        android:visibility="gone" />
+
+</RelativeLayout>

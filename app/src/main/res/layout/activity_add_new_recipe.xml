@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffaaaaaa"
+    tools:context=".AddNewRecipe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/new_recipe_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="New recipe"
+            android:textSize="60dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_recipe_title"
+            android:background="#30ffffff"
+            android:hint="Recipe name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/recipe_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#30ffffff"
+            android:hint="Description"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/ingredient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_description"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#30ffffff"
+            android:hint="Add an ingredient"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_ingredient_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/recipe_description"
+            android:backgroundTint="#30ffffff"
+            android:text="Add"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id="@+id/ingredients_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredient_name"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/recipe_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredients_layout"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#30ffffff"
+            android:hint="Instructions"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_instruction_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredients_layout"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#30ffffff"
+            android:text="Add"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id="@+id/instructions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_instructions"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instructions_layout"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/return_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#30ffffff"
+                android:text="Return"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/create_recipe_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#30ffffff"
+                android:text="Create"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

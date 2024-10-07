@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#bbbbbb"
+        android:text="RETURN"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Clear"
+        android:onClick="clearMeals"
+        android:background="#bbbbbb" />
+
+    <TextView
+        android:id="@+id/textViewRemainingCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/return_button" />
+
+    <EditText
+        android:id="@+id/editTextCalorieGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRemainingCalories"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Calorie goal"
+        android:minHeight="48dp"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddNow"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextCalorieGoal"
+        android:layout_centerHorizontal="true"
+        android:text="Add Now"
+        android:onClick="openAddMealDialog"
+        android:background="#bbbbbbbb"
+        android:padding="16dp"
+        android:gravity="center" />
+
+    <ListView
+        android:id="@+id/listViewMeals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnAddNow"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

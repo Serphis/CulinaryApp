@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".MyRecipes">
+
+    <TextView
+        android:id="@+id/my_recipes_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="#aaaaaa"
+        android:gravity="center"
+        android:text="My Recipes"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/return_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="BACK"
+        android:background="@drawable/returnbutton"
+        android:contentDescription="Return"
+        android:layout_alignParentRight="true" />
+
+    <ListView
+        android:id="@+id/my_recipes_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/my_recipes_title"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/no_recipes_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="You haven't created any recipes yet."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

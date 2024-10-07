@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/recipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Recipe Image" />
+
+    <TextView
+        android:id="@+id/recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/recipe_image"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <TextView
+        android:id="@+id/recipe_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipe_name"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <TextView
+        android:id="@+id/recipe_made_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/recipe_image"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#bbbbbb"
+        android:text="DELETE"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#bbbbbb"
+        android:text="RETURN"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/ingredients_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/recipe_description"
+        android:text="Ingredients"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:gravity="left"/>
+
+    <ListView
+        android:id="@+id/ingredient_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingredients_title"/>
+
+    <TextView
+        android:id="@+id/instructions_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ingredient_list"
+        android:text="Instructions"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:gravity="left"/>
+
+
+    <ListView
+        android:id="@+id/instruction_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructions_title"/>
+</RelativeLayout>

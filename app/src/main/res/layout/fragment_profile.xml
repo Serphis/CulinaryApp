@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment"
+    android:background="#dddddd">
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaaaaa"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="300dp"
+        android:src="@drawable/baseline_error_outline_24"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="50dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/account_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#aaaaaa"
+            android:gravity="center"
+            android:text="Account settings"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
