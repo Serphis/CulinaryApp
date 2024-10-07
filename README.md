@@ -1,6 +1,6 @@
 My culinary application using Firebase Authentication and Firebase to manage data used in app.
 
-User login
+<b><h2>User login</h2></b>
 
 <img src="https://github.com/user-attachments/assets/570f2df5-36eb-4dca-992e-a197dc58aac4" width="250">
 
